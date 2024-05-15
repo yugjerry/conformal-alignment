@@ -35,6 +35,8 @@ The script ```_fdr.py``` implements the Conformal Alignment procedure and calcul
 python3 -m _fdr.py --data "triviaqa" --model "llama-2-13b-chat-hf" --N 2000 --split_pr 0.5 --split_pr_tune 0.2
 ```
 
+```notebook/run_qa.ipynb``` reproduces figures and examples in the paper.
+
 # Chest X-ray (CXR) report generating (```cxr/```)
 
 ## Dataset and LLM preparation
@@ -66,6 +68,8 @@ The script ```_fdr.py``` implements the Conformal Alignment procedure and calcul
 ```bash
 python3 -m _fdr.py --data "cxr" --model "trained" --N 2000 --split_pr 0.5 --split_pr_tune 0.2
 ```
+
+```notebook/run_cxr.ipynb``` presents examples of report generating using the fine-tuned model and also reproduces figures and examples in the paper.
 
 
 
