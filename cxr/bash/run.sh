@@ -15,6 +15,6 @@ data="cxr"
 bsize=100
 bnum=100
 
-python3 -u pipeline/generate --idx $SGE_TASK_ID --batch_size $bsize
-python3 -u pipeline/generate_encode.py --num_batch $bnum
-python3 -u dataeval/load_run.py --idx $SGE_TASK_ID --batch_size $bsize --data $data --model $model
+python3 -m pipeline/generate --idx $SGE_TASK_ID --batch_size $bsize
+python3 -m pipeline/generate_encode.py --num_batch $bnum
+python3 -m dataeval/load_run.py --idx $SGE_TASK_ID --batch_size $bsize --data $data --model $model
