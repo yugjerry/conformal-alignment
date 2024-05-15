@@ -3,7 +3,7 @@
 This repo implements the Conformal Alignment procedure in the tasks of question answering and radiology report generation. 
 Given any pre-trained model and new units with model-generated outputs, Conformal Alignment leverages a set of reference data with ground-truth alignment status to train an alignment predictor. It then selects new units whose predicted alignment scores surpass a data-dependent threshold, certifying their corresponding outputs as trustable. It is guaranteed that on average, a prescribed fraction of selected units indeed meet the alignment criterion, regardless of the foundation model or the data distribution.
 
-Answer generations in question answering and calculation of confidence/uncertainty scores follow the implementation in <https://github.com/zlin7/UQ-NLG>.
+Answer generating in question answering and calculation of confidence/uncertainty scores follow the implementation in <https://github.com/zlin7/UQ-NLG>.
 
 # Question answering (```qa/```)
 
