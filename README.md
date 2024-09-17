@@ -41,7 +41,7 @@ python3 -m _fdr.py --data "triviaqa" --model "llama-2-13b-chat-hf" --N 2000 --sp
 
 ## Dataset and LLM preparation
 
-Vision-language model fine-tuning is implemented in the notebook ```cxr/vlm_finetune.ipynb``` following [conformal language modeling](https://arxiv.org/abs/2306.10193), in which we use a [**Vision Transformer** (ViT) pretrained on ImageNet-21k](https://huggingface.co/google/vit-base-patch16-224-in21k) as the image encoder and **GPT2** as the text decoder.
+CXR image preprocessing and vision-language model fine-tuning in the notebook ```cxr/vlm_finetune.ipynb``` follow the implementation in [conformal language modeling](https://github.com/Varal7/conformal-language-modeling), in which we use a [**Vision Transformer** (ViT) pretrained on ImageNet-21k](https://huggingface.co/google/vit-base-patch16-224-in21k) as the image encoder and **GPT2** as the text decoder.
 
 [**MIMIC-CXR**](https://www.nature.com/articles/s41597-019-0322-0) dataset needs access. See the [PhysioNet project page](https://physionet.org/content/mimic-cxr/2.0.0/).
 
